@@ -1,6 +1,7 @@
 //Aref
 const { Client, Intents, Attachment} = require('discord.js');
 const Discord = require('discord.js');
+require('dotenv').config();
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -78,4 +79,4 @@ client.on('message', message => {
 
 
 
-client.login('OTA2NTg3ODU3NzYwNjk4Mzg4.YYazvA.63PIqw6V1U8-h41ckaqU-WQOo-8');
+client.login(process.env.token);
