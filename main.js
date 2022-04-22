@@ -67,6 +67,9 @@ client.on('message', message => {
     else if(command == 'prayer'){
         client.commands.get('prayers').execute(message, args);
     }
+    else if(command == 'date'){
+        client.commands.get('date').execute(message, args);
+    }
     else {
         if(message.content.substring(prefix.length, prefix.length + 1) == ' '){
             message.channel.send(`I dont know what the fuck you are saying, use "harmony, commands" to get help and if its an insult**${message.content.substring(prefix.length, message.length)}** too`);
