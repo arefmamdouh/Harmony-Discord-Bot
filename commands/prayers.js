@@ -21,6 +21,13 @@ module.exports = {
                                 " in Cairo"
                         );
                         break;
+                        case "dhuhr":
+                        message.reply(
+                            "Dhuhr prayer is set at " +
+                                data.data.timings.Dhuhr +
+                                " in Cairo"
+                        );
+                        break;
                     case "sunrise":
                         message.reply(
                             "Sunrise prayer is set at " +
@@ -37,7 +44,7 @@ module.exports = {
                         break;
                     case "maghrib":
                         message.reply(
-                            "Sunset prayer is set at " +
+                            "maghrib prayer is set at " +
                                 data.data.timings.Sunset +
                                 " in Cairo"
                         );
@@ -53,13 +60,6 @@ module.exports = {
                         message.reply(
                             "Imsak prayer is set at " +
                                 data.data.timings.Imsak +
-                                " in Cairo"
-                        );
-                        break;
-                    case "midnight":
-                        message.reply(
-                            "Midnight prayer is set at " +
-                                data.data.timings.Midnight +
                                 " in Cairo"
                         );
                         break;
