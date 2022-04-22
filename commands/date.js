@@ -46,7 +46,13 @@ module.exports = {
             mon = 'december';
         }
 
-
-        message.reply('The date is ' + mon + ' ' + date + ', ' + year + ' and the time is ' + hours + ':' + minutes);
+        var min;
+        if (minutes < 10){
+            min = "0"+minutes;
+        }
+        else{
+            min = minutes;
+        }
+        message.reply('The date is ' + mon + ' ' + date + ', ' + year + ' and the time is ' + hours + ':' + min);
     }
 }
