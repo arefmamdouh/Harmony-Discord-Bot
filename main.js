@@ -49,8 +49,8 @@ client.on('message', message => {
     if(command == 'ping'){
         return client.commands.get('ping').execute(message, args);
     }
-    if(command == 'commands'){
-        client.commands.get('commands').execute(message, args, Discord);
+    if(command == 'help'){
+        client.commands.get('help').execute(message, args, Discord);
     }
     else if(command == 'creator'){
         client.commands.get('creator').execute(message, args);
