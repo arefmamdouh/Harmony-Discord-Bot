@@ -7,17 +7,18 @@ module.exports = {
             .setDescription('An embed for the list of commands used by Harmony')
             .setTitle('Commands')
             .addFields(
-                {name: `harmony, hi`, value: 'I say hello back :D I might say something weird though, you can also say hello.'},
-                {name: `harmony, play <music>`, value: 'after using this command type in whatever song you want to listen to. Not just music btw you can also ask for a sound or a podcast.'},
-                {name: `harmony, stop`, value: 'stops the music, you can use leave, bye, peace out...'},
-                {name: `harmony, date`, value: 'tells you the date'},
-                {name: `harmony, ping`, value: 'I\'ll leave it as a surprise.'},
-                {name: `harmony, creator`, value: 'I\'ll tell you about the man that made me.'},
-                {name: `harmony, prayer <prayer name>`, value: "Use harmony, prayer followed by the name of the prayer.\n" +
-                "prayer names: fajr, sunrise, dhuhr, asr, maghrib, isha, and imsak."}
+                {name: `the prefix is harmony,`, 
+                value: 
+                "`harmony, hi                  : `I say hello back :D I might say something weird though, you can also say hello. \n" +
+                "`harmony, play <music>        : `After using this command type in whatever song you want to listen to. Not just music btw you can also ask for a sound or a podcast. \n" +
+                "`harmony, stop                : `Stops the music, you can use leave, bye, peace out...\n" +
+                "`harmony, date                : `Tells you the date.\n" +
+                "`harmony, ping                : `I\'ll leave it as a surprise.\n" +
+                "`harmony, creator             : `I\'ll tell you about the man that made me.\n" +
+                "`harmony, prayer <prayer name>: `Use harmony, prayer followed by the name of the prayer.\n" +
+                "`prayer names                 : `fajr, sunrise, dhuhr, asr, maghrib, and isha."}
             )
-            .setFooter('Have fun homies. With love, Aref Mamdouh')
-            .setAuthor('Aref Mamdouh');
+            .setFooter('Have fun homies. With love, Aref Mamdouh');
 
             message.channel.send(newEmbed);
     }
