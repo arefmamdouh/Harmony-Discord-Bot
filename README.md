@@ -6,7 +6,7 @@ here is the link https://discord.com/api/oauth2/authorize?client_id=906587857760
 
 ## Pulling this code
 if you want to pull this project and use it, you will have to create a ".env" file and set the token to your own bot's token. 
-You can search up "how to hide a discord bot's token". 
+You can search up "how to hide a discord bot's token", you would also need to use this command in the command line and in the project's directory "npm install". 
 
 ## Adding features
 if you want to add a feature just add it in the commands folder and for example if the command is named help then you should name it accordingly: "help.js".
