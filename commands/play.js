@@ -8,7 +8,7 @@ module.exports = {
     name: 'play',
     description: 'joins the voice channel and plays a video from youtube',
     async execute(message, args){
-        if(message.member.roles.cache.has('954854909960929301')) {
+        // if(message.member.roles.cache.has('954854909960929301')) {
             const voiceChannel = message.member.voice.channel;
 
             if(!message.member.voice.channel){
@@ -78,9 +78,9 @@ module.exports = {
             else {
                 message.reply('I have no idea what song that is');
             }
-        }
-        else {
-            message.reply('You ain\'t a damn DJ bitch');
-        }
+        // }
+        // else {
+        //     message.reply('You ain\'t a damn DJ bitch');
+        // }
     }
 }
