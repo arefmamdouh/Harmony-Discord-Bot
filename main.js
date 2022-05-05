@@ -72,10 +72,10 @@ client.on('message', message => {
     }
     else {
         if(message.content.substring(prefix.length, prefix.length + 1) == ' '){
-            message.channel.send(`I dont know what the fuck you are saying, use "harmony, commands" to get help and if its an insult**${message.content.substring(prefix.length, message.length)}** too`);
+            message.channel.send(`I dont know what the fuck you are saying, use "harmony, help" to get help and if its an insult**${message.content.substring(prefix.length, message.length)}** too`);
         }
         else{
-            message.channel.send(`I dont know what the fuck you are saying, use "harmony, commands" to get help and if its an insult **${message.content.substring(prefix.length, message.length)}** too`);
+            message.channel.send(`I dont know what the fuck you are saying, use "harmony, help" to get help and if its an insult **${message.content.substring(prefix.length, message.length)}** too`);
         }
     }
 });
