@@ -25,9 +25,9 @@ client.once('ready', () => {
 
 client.on('message', message => {
 
-    client.on('guildCreate', joinedGuild => {
-        message.channel.send('Hi, I\'m Harmony. Use "harmnoy, commands" to figure out how to use me.')
-    });    
+    // client.on('guildCreate', joinedGuild => {
+    //     message.channel.send('Hi, I\'m Harmony. Use "harmnoy, commands" to figure out how to use me.')
+    // });    
 
     message.content = message.content.toLowerCase();
 
